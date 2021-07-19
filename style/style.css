@@ -2,7 +2,10 @@
     --body-color: darkblue;
     --card-color: #2C3647;
     --link-color: #3A68B8;
-    --header-color: #440075;
+    --header-footer-color: #440075;
+    --content-color: #333237;
+    --content-two-color: #0F52FF;
+    --slide-color: #2C3647;
     --white-color: white;
 }
 
@@ -18,12 +21,12 @@ body {
 }
 
 .content {
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .main-header {
-    background-color: var(--header-color);
+    background-color: var(--header-footer-color);
 }
 
 .main-navigation {
@@ -62,7 +65,7 @@ body {
 
 .main-navigation .button {
     width: 112px;
-    margin-left: 300px;
+    margin-left: 340px;
     margin-top: 24px;
     text-align: center;
 }
@@ -72,9 +75,231 @@ body {
     color: var(--white-color);
     height: 52px;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+.intro-block {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--content-two-color-color);
 }
 
 .intro-info {
     margin-top: 160px;
+    width: 604px;
+    height: 415px;
+}
+
+.intro-info p:first-child {
+    margin-top: 0;
+    text-transform: uppercase;
+    color: var(--link-color);
+}
+
+.intro-info h2 {
+    margin-top: 0;
+    font-size: 55px;
+    line-height: 71px;
+    width: 604px;
+}
+
+.intro-info p:nth-child(3) {
+    margin-bottom: 50px;
+    opacity: 0.7;
+}
+
+.intro-link .button {
+    font-size: 20px;
+    line-height: 27px;
+    width: 217px;
+    height: 57px;
+}
+
+.intro-link .button:last-child {
+    margin-left: 20px;
+}
+
+.intro-image {
+    margin-top: 49px;
+    background-image: url("../img/intro-image.png");
+    background-repeat: no-repeat;
+    width: 630px;
+    height: 634px;
+}
+
+.partners {
+    margin: 89px 0 0 0;
+    padding: 0;
+    width: 1146px;
+    height: 59px;
+    list-style: none;
     display: flex;
+    column-gap: 70px;
+}
+
+.partners li {
+    background-repeat: no-repeat;
+    height: 59px;
+}
+
+.partner-item1 {
+    background-image: url("../img/partner-1.png");
+    width: 217px;
+}
+
+.partner-item2 {
+    background-image: url("../img/partner-2.png");
+    width: 212px;
+}
+
+.partner-item3 {
+    background-image: url("../img/partner-3.png");
+    width: 207px;
+}
+
+.partner-item4 {
+    background-image: url("../img/partner-4.png");
+    width: 294px;
+}
+
+.specialization-block {
+    margin-top: 130px;
+    height: 669px;
+    display: flex;
+}
+
+.specialization-image {
+    background-image: url("../img/the_brain.png");
+    background-repeat: no-repeat;
+    width: 725px;
+    height: 669px;
+}
+
+.specialization-info {
+    margin-top: 178px;
+}
+
+.specialization-info h3 {
+    margin-top: 0;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.specialization-info p {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.specialization-info a {
+    width: 150px;
+    height: 52px;
+}
+
+.advantages {
+    margin-top: 170px;
+}
+
+.advantages-block {
+    display: flex;
+    column-gap: 22.8px;
+}
+
+.advantages-item {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--card-color);
+    width: 225px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-item:first-of-type h3 {
+    margin-top: 60px;
+}
+
+.advantages-item img {
+    margin-left: 65px;
+}
+
+.advantages-item h3 {
+    width: 240px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 0.7;
+}
+
+.advantages-item p {
+    margin: 0;
+    opacity: 0.7;
+}
+
+.slide-advantages {
+    list-style: none;
+    padding: 0;
+    margin: 50px auto 0 auto;
+    display: flex;
+    column-gap: 10px;
+}
+
+.slide-advantages li {
+    width: 15px;
+    height: 15px;
+    background-color: var(--slide-color);
+    border-radius: 50%;
+}
+
+.slide-advantages li:first-of-type {
+    margin-left: 650px;
+}
+
+.about-block {
+    margin-top: 170px;
+    margin-bottom: 170px;
+    display: flex;
+}
+
+.about-info h3 {
+    font-size: 40px;
+    line-height: 52px;
+    width: 548px;
+}
+
+.about-info p {
+    opacity: 0.7;
+}
+
+.about-image {
+    background-image: url("../img/about.png");
+    background-repeat: no-repeat;
+    width: 642px;
+    height: 551px;
+}
+
+.main-footer {
+    background-color: var(--header-footer-color);
+    display: flex;
+    column-gap: 30px;
+}
+
+.footer-element {
+    width: 165px;
+}
+
+.footer-element:first-of-type {
+    width: 261px;
+    margin-left: 30px;
+}
+
+.footer-element h4 {
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.footer-element p {
+    font-size: 14px;
+    line-height: 18px;
+    opacity: 0.6;
 }
